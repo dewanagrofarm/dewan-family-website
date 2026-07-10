@@ -26,9 +26,6 @@ if (!data) {
   document.getElementById("family-list").innerHTML = html;
 });
 function setLanguage(lang) {
-
-  function setLanguage(lang) {
-
   if (lang === "bn") {
     document.querySelectorAll("nav a")[0].innerHTML = "🏠 হোম";
     document.querySelectorAll("nav a")[1].innerHTML = "👨‍👩‍👧‍👦 পরিবার";
