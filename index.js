@@ -60,6 +60,10 @@ document.querySelectorAll("nav a")[7].innerHTML = "🔑 অ্যাডমিন
     document.querySelector(".hero h2").innerHTML = "🌿 Welcome to Dewan Family Heritage";
     document.querySelector(".hero p").innerHTML =
       "Digital preservation of the history, family tree, agro initiatives and future vision of the Dewan Family.";
+document.querySelectorAll(".btn")[0].innerHTML = "👪 View Family";
+document.querySelectorAll(".btn")[1].innerHTML = "📖 Read History";
+document.querySelectorAll(".btn")[2].innerHTML = "🌳 Family Tree";
+document.querySelectorAll(".btn")[3].innerHTML = "💰 Investment";
   }
 
 }
