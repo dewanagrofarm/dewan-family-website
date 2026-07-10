@@ -43,21 +43,20 @@ nav a{
 }
 
 .hero{
-  background:linear-gradient(135deg,#0b5d3b,#1d8f5b);
-  color:white;
-  text-align:center;
-  padding:80px 20px;
+    background: linear-gradient(135deg,#0b5d3b,#1d8f5a);
+    color:white;
+    text-align:center;
+    padding:80px 20px;
 }
 
 .hero h2{
-  font-size:42px;
+    font-size:42px;
 }
 
 .hero p{
-  margin:20px 0;
-  font-size:18px;
+    margin:20px 0;
+    font-size:18px;
 }
-
 .btn{
   display:inline-block;
   padding:12px 25px;
