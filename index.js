@@ -26,42 +26,44 @@ if (!data) {
   document.getElementById("family-list").innerHTML = html;
 });
 function setLanguage(lang) {
+function setLanguage(lang) {
+  const nav = document.querySelectorAll("nav a");
+  const btn = document.querySelectorAll(".btn");
+
   if (lang === "bn") {
-    document.querySelectorAll("nav a")[0].innerHTML = "🏠 হোম";
-    document.querySelectorAll("nav a")[1].innerHTML = "👨‍👩‍👧‍👦 পরিবার";
-    document.querySelectorAll("nav a")[2].innerHTML = "🌳 পরিবার বৃক্ষ";
-    document.querySelectorAll("nav a")[3].innerHTML = "🌾 কৃষি খামার";
-    document.querySelectorAll("nav a")[4].innerHTML = "💰 বিনিয়োগ";
-    document.querySelectorAll("nav a")[5].innerHTML = "🖼️ গ্যালারি";
-    document.querySelectorAll("nav a")[6].innerHTML = "📞 যোগাযোগ";
-    document.querySelectorAll("nav a")[7].innerHTML = "🔑 অ্যাডমিন";
+    nav[0].textContent = "🏠 হোম";
+    nav[1].textContent = "👨‍👩‍👧‍👦 পরিবার";
+    nav[2].textContent = "🌳 পরিবার বৃক্ষ";
+    nav[3].textContent = "🌾 কৃষি খামার";
+    nav[4].textContent = "💰 বিনিয়োগ";
+    nav[5].textContent = "🖼️ গ্যালারি";
+    nav[6].textContent = "📞 যোগাযোগ";
+    nav[7].textContent = "🔑 অ্যাডমিন";
 
-    document.querySelector(".hero h2").innerHTML = "🌿 দেওয়ান পরিবারের ঐতিহ্যে স্বাগতম";
-    document.querySelector(".hero p").innerHTML = "বাংলাদেশের অন্যতম ঐতিহ্যবাহী দেওয়ান পরিবারের ইতিহাস, বংশবৃক্ষ, কৃষি উদ্যোগ ও ভবিষ্যৎ পরিকল্পনার ডিজিটাল সংরক্ষণ।";
+    document.querySelector(".hero h2").textContent =
+      "🌿 দেওয়ান পরিবারের ঐতিহ্যে স্বাগতম";
 
-    document.querySelectorAll(".btn")[0].innerHTML = "👨‍👩‍👧‍👦 পরিবার দেখুন";
-    document.querySelectorAll(".btn")[1].innerHTML = "📖 ইতিহাস পড়ুন";
-    document.querySelectorAll(".btn")[2].innerHTML = "🌳 পরিবার বৃক্ষ";
-    document.querySelectorAll(".btn")[3].innerHTML = "💰 বিনিয়োগ";
-  }
+    btn[0].textContent = "👨‍👩‍👧‍👦 পরিবার দেখুন";
+    btn[1].textContent = "📖 ইতিহাস পড়ুন";
+    btn[2].textContent = "🌳 পরিবার বৃক্ষ";
+    btn[3].textContent = "💰 বিনিয়োগ";
+  } else {
+    nav[0].textContent = "🏠 Home";
+    nav[1].textContent = "👨‍👩‍👧‍👦 Family";
+    nav[2].textContent = "🌳 Family Tree";
+    nav[3].textContent = "🌾 Agro Farm";
+    nav[4].textContent = "💰 Investment";
+    nav[5].textContent = "🖼️ Gallery";
+    nav[6].textContent = "📞 Contact";
+    nav[7].textContent = "🔑 Admin";
 
-  if (lang === "en") {
-    document.querySelectorAll("nav a")[0].innerHTML = "🏠 Home";
-    document.querySelectorAll("nav a")[1].innerHTML = "👨‍👩‍👧‍👦 Family";
-    document.querySelectorAll("nav a")[2].innerHTML = "🌳 Family Tree";
-    document.querySelectorAll("nav a")[3].innerHTML = "🌾 Agro Farm";
-    document.querySelectorAll("nav a")[4].innerHTML = "💰 Investment";
-    document.querySelectorAll("nav a")[5].innerHTML = "🖼️ Gallery";
-    document.querySelectorAll("nav a")[6].innerHTML = "📞 Contact";
-    document.querySelectorAll("nav a")[7].innerHTML = "🔑 Admin";
+    document.querySelector(".hero h2").textContent =
+      "🌿 Welcome to Dewan Family Heritage";
 
-    document.querySelector(".hero h2").innerHTML = "🌿 Welcome to Dewan Family Heritage";
-    document.querySelector(".hero p").innerHTML = "Digital preservation of the history, family tree, agro initiatives and future vision of the Dewan Family.";
-
-    document.querySelectorAll(".btn")[0].innerHTML = "👨‍👩‍👧‍👦 View Family";
-    document.querySelectorAll(".btn")[1].innerHTML = "📖 Read History";
-    document.querySelectorAll(".btn")[2].innerHTML = "🌳 Family Tree";
-    document.querySelectorAll(".btn")[3].innerHTML = "💰 Investment";
+    btn[0].textContent = "👨‍👩‍👧‍👦 View Family";
+    btn[1].textContent = "📖 Read History";
+    btn[2].textContent = "🌳 Family Tree";
+    btn[3].textContent = "💰 Investment";
   }
 }
 
