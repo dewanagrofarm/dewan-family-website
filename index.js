@@ -7,7 +7,10 @@ const familyRef = ref(window.db, "family");
 
 onValue(familyRef, (snapshot) => {
   const data = snapshot.val();
-
+if (!data) {
+  document.getElementById("family-list").innerHTML = "<p>কোন সদস্য নেই</p>";
+  return;
+}
   let html = "<h2>👨‍👩‍👧‍👦 Family Members</h2>";
 
   for (let id in data) {
