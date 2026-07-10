@@ -117,7 +117,27 @@ footer{
     text-align:center;
     box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
+.history{
+    background:#ffffff;
+    padding:50px 20px;
+    margin:30px auto;
+    border-radius:12px;
+    text-align:center;
+}
 
+.history h2{
+    color:#0b5d3b;
+    font-size:32px;
+    margin-bottom:20px;
+}
+
+.history p{
+    font-size:18px;
+    line-height:1.8;
+    color:#444;
+    max-width:800px;
+    margin:auto;
+}
 .member h3{
     color:#0b6b3a;
 }
