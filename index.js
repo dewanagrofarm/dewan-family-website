@@ -39,3 +39,4 @@ function setLanguage(lang) {
   }
 
 }
+window.setLanguage = setLanguage;
