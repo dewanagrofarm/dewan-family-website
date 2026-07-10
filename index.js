@@ -1,4 +1,5 @@
-import {
+
+{
   ref,
   onValue
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
@@ -55,7 +56,14 @@ document.querySelectorAll("nav a")[7].innerHTML = "🔑 অ্যাডমিন
     document.querySelector(".hero p").innerHTML =
       "বাংলাদেশের অন্যতম ঐতিহ্যবাহী দেওয়ান পরিবারের ইতিহাস, বংশবৃক্ষ, কৃষি উদ্যোগ ও ভবিষ্যৎ পরিকল্পনার ডিজিটাল সংরক্ষণ।";
   }
-
+document.querySelectorAll("nav a")[0].innerHTML = "🏠 Home";
+document.querySelectorAll("nav a")[1].innerHTML = "👪 Family";
+document.querySelectorAll("nav a")[2].innerHTML = "🌳 Family Tree";
+document.querySelectorAll("nav a")[3].innerHTML = "🌾 Agro Farm";
+document.querySelectorAll("nav a")[4].innerHTML = "💰 Investment";
+document.querySelectorAll("nav a")[5].innerHTML = "🖼 Gallery";
+document.querySelectorAll("nav a")[6].innerHTML = "📞 Contact";
+document.querySelectorAll("nav a")[7].innerHTML = "🔑 Admin";
   if (lang === "en") {
     document.querySelector(".hero h2").innerHTML = "🌿 Welcome to Dewan Family Heritage";
     document.querySelector(".hero p").innerHTML =
