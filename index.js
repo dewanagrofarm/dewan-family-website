@@ -26,8 +26,16 @@ if (!data) {
 });
 function setLanguage(lang) {
 
-  if (lang === "bn") 
-  {document.querySelectorAll("nav a")[0].innerHTML = "🏠 হোম";
+  if (lang === "bn"){
+    document.querySelectorAll("nav a")[0].innerHTML = "🏠 Home";
+document.querySelectorAll("nav a")[1].innerHTML = "👪 Family";
+document.querySelectorAll("nav a")[2].innerHTML = "🌳 Family Tree";
+document.querySelectorAll("nav a")[3].innerHTML = "🌾 Agro Farm";
+document.querySelectorAll("nav a")[4].innerHTML = "💰 Investment";
+document.querySelectorAll("nav a")[5].innerHTML = "🖼 Gallery";
+document.querySelectorAll("nav a")[6].innerHTML = "📞 Contact";
+document.querySelectorAll("nav a")[7].innerHTML = "🔑 Admin";
+document.querySelectorAll("nav a")[0].innerHTML = "🏠 হোম";
 document.querySelectorAll("nav a")[1].innerHTML = "👨‍👩‍👧‍👦 পরিবার";
 document.querySelectorAll("nav a")[2].innerHTML = "🌳 পরিবার বৃক্ষ";
 document.querySelectorAll("nav a")[3].innerHTML = "🌾 কৃষি খামার";
