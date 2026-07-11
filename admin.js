@@ -79,3 +79,22 @@ if (pendingList) {
   });
 
 }
+import { get, set, remove } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
+
+window.approveMember = async function(id) {
+
+  const pendingRef = ref(window.db, "pendingMembers/" + id);
+
+  const snapshot = await get(pendingRef);
+
+  if (!snapshot.exists()) return;
+
+  const member = snapshot.val();
+
+  await set(ref(window.db, "family/" + id), member);
+
+  await remove(pendingRef);
+
+  alert("✅ Member Approved Successfully!");
+
+};
