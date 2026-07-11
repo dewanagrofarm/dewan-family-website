@@ -65,12 +65,13 @@ if (pendingList) {
 
 <p>📌 ${member.status}</p>
 
-<button onclick="approveMember('${id}')">
-✅ Approve
-</button>
-<button onclick="deleteMember('${id}')">
-❌ Reject
-</button>
+ <button onclick="approveMember('${id}')">
+ ✅ Approve
+ </button>
+ 
+ <button onclick="deleteMember('${id}')">
+ ❌ Reject
+ </button>
 </div>
 `;
 
@@ -98,5 +99,14 @@ window.approveMember = async function(id) {
   await remove(pendingRef);
 
   alert("✅ Member Approved Successfully!");
+
+};
+window.deleteMember = async function(id) {
+
+  if (!confirm("এই আবেদনটি বাতিল করতে চান?")) return;
+
+  await remove(ref(window.db, "pendingMembers/" + id));
+
+  alert("❌ আবেদন বাতিল করা হয়েছে!");
 
 };
