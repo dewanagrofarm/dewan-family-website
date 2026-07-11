@@ -110,3 +110,20 @@ window.deleteMember = async function(id) {
   alert("❌ আবেদন বাতিল করা হয়েছে!");
 
 };
+// Total Family Members
+const familyRef = ref(window.db, "family");
+
+onValue(familyRef, (snapshot) => {
+  const data = snapshot.val();
+  const total = data ? Object.keys(data).length : 0;
+
+  document.getElementById("totalMembers").textContent = total;
+});
+
+// Pending Members Count
+onValue(pendingRef, (snapshot) => {
+  const data = snapshot.val();
+  const total = data ? Object.keys(data).length : 0;
+
+  document.getElementById("pendingCount").textContent = total;
+});
