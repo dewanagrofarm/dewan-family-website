@@ -168,3 +168,31 @@ footer{
     padding:14px 28px;
     border-radius:10px;
 }
+
+/* Hover Effects */
+
+nav a:hover{
+    color:#ffd54f;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#0b5d3b;
+    color:#fff;
+    transform:translateY(-3px);
+    transition:.3s;
+}
+
+.member:hover{
+    transform:translateY(-8px);
+    transition:.3s;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+.card{
+    background:#fff;
+    padding:20px;
+    border-radius:12px;
+    margin:15px 0;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
