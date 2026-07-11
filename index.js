@@ -29,8 +29,6 @@ onValue(familyRef, (snapshot) => {
   familyList.innerHTML = html;
 });function setLanguage(lang) {
 
-  function setLanguage(lang) {
-
   const nav = document.querySelectorAll("nav a");
   const heroTitle = document.querySelector(".hero h2");
   const heroText = document.querySelector(".hero p");
