@@ -55,16 +55,22 @@ if (pendingList) {
     Object.entries(data).forEach(([id, member]) => {
 
       html += `
-      <div class="card">
-        <h3>${member.name}</h3>
+<div class="card">
 
-        <p>📱 ${member.mobile}</p>
+<h3>${member.name}</h3>
 
-        <p>📧 ${member.email}</p>
+<p>📱 ${member.mobile}</p>
 
-        <p>📌 ${member.status}</p>
-      </div>
-      `;
+<p>📧 ${member.email}</p>
+
+<p>📌 ${member.status}</p>
+
+<button onclick="approveMember('${id}')">
+✅ Approve
+</button>
+
+</div>
+`;
 
     });
 
