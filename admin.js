@@ -94,7 +94,9 @@ window.approveMember = async function(id) {
 
   const member = snapshot.val();
 
-  await set(ref(window.db, "family/" + id), member);
+member.status = "approved";
+
+await set(ref(window.db, "family/" + id), member);
 
   await remove(pendingRef);
 
