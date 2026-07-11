@@ -98,7 +98,8 @@ window.approveMember = async function(id) {
 
   await remove(pendingRef);
 
-  alert("✅ Member Approved Successfully!");
+alert("✅ Member Approved Successfully!");
+window.location.href = "profile.html?id=" + id;
 
 };
 window.deleteMember = async function(id) {
