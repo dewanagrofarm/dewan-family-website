@@ -68,7 +68,9 @@ if (pendingList) {
 <button onclick="approveMember('${id}')">
 ✅ Approve
 </button>
-
+<button onclick="deleteMember('${id}')">
+❌ Reject
+</button>
 </div>
 `;
 
