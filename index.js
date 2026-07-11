@@ -29,6 +29,8 @@ onValue(familyRef, (snapshot) => {
   familyList.innerHTML = html;
 });function setLanguage(lang) {
 
+  function setLanguage(lang) {
+
   const nav = document.querySelectorAll("nav a");
   const heroTitle = document.querySelector(".hero h2");
   const heroText = document.querySelector(".hero p");
@@ -37,7 +39,7 @@ onValue(familyRef, (snapshot) => {
   if (lang === "bn") {
 
     nav[0].textContent = "🏠 হোম";
-    nav[1].textContent = "👨‍👩‍👧‍👦 পরিবার";
+    nav[1].textContent = "👪 পরিবার";
     nav[2].textContent = "🌳 পরিবার বৃক্ষ";
     nav[3].textContent = "🌾 কৃষি খামার";
     nav[4].textContent = "💰 বিনিয়োগ";
@@ -47,9 +49,9 @@ onValue(familyRef, (snapshot) => {
 
     heroTitle.textContent = "🌿 দেওয়ান পরিবারের ঐতিহ্যে স্বাগতম";
     heroText.textContent =
-      "বাংলাদেশের অন্যতম ঐতিহ্যবাহী দেওয়ান পরিবারের ইতিহাস, বংশবৃক্ষ, কৃষি উদ্যোগ ও ভবিষ্যৎ পরিকল্পনার ডিজিটাল সংরক্ষণ।";
+      "বাংলাদেশের অন্যতম ঐতিহাসিক দেওয়ান পরিবারের ইতিহাস, বংশধারা, কৃষি খামার ও ভবিষ্যৎ পরিকল্পনার ডিজিটাল সংরক্ষণ।";
 
-    btn[0].textContent = "👨‍👩‍👧‍👦 পরিবার দেখুন";
+    btn[0].textContent = "👪 পরিবার দেখুন";
     btn[1].textContent = "📖 ইতিহাস পড়ুন";
     btn[2].textContent = "🌳 পরিবার বৃক্ষ";
     btn[3].textContent = "💰 বিনিয়োগ";
@@ -57,7 +59,7 @@ onValue(familyRef, (snapshot) => {
   } else {
 
     nav[0].textContent = "🏠 Home";
-    nav[1].textContent = "👨‍👩‍👧‍👦 Family";
+    nav[1].textContent = "👪 Family";
     nav[2].textContent = "🌳 Family Tree";
     nav[3].textContent = "🌾 Agro Farm";
     nav[4].textContent = "💰 Investment";
@@ -67,12 +69,14 @@ onValue(familyRef, (snapshot) => {
 
     heroTitle.textContent = "🌿 Welcome to Dewan Family Heritage";
     heroText.textContent =
-      "Digital preservation of the history, family tree, agro initiatives and future vision of the Dewan Family.";
+      "Digital preservation of the history, family tree, agro farm and future vision of Dewan Family.";
 
-    btn[0].textContent = "👨‍👩‍👧‍👦 View Family";
+    btn[0].textContent = "👪 View Family";
     btn[1].textContent = "📖 Read History";
     btn[2].textContent = "🌳 Family Tree";
     btn[3].textContent = "💰 Investment";
+  }
+
   document.querySelector(".about h2").textContent =
     lang === "bn"
       ? "🌿 দেওয়ান পরিবার পরিচিতি"
