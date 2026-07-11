@@ -17,14 +17,18 @@ onValue(familyRef, (snapshot) => {
 
   let html = "<h2>👨‍👩‍👧‍👦 Family Members</h2>";
 
-  Object.values(data).forEach((member) => {
-    html += `
-      <div class="card">
-        <h3>${member.name}</h3>
-        <p>${member.details}</p>
-      </div>
-    `;
-  });
+  Object.entries(data).forEach(([id, member]) => {
+  html += `
+    <div class="card">
+      <h3>
+        <a href="profile.html?id=${id}">
+          ${member.name}
+        </a>
+      </h3>
+      <p>${member.details}</p>
+    </div>
+  `;
+});
 
   familyList.innerHTML = html;
 });function setLanguage(lang) {
