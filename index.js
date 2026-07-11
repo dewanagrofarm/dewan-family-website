@@ -73,14 +73,20 @@ onValue(familyRef, (snapshot) => {
     btn[1].textContent = "📖 Read History";
     btn[2].textContent = "🌳 Family Tree";
     btn[3].textContent = "💰 Investment";
- document.querySelector(".about h2").textContent =
-    lang === "bn" ? "🌿 দেওয়ান পরিবার পরিচিতি" : "🌿 About Dewan Family Heritage";
+  document.querySelector(".about h2").textContent =
+    lang === "bn"
+      ? "🌿 দেওয়ান পরিবার পরিচিতি"
+      : "🌿 About Dewan Family Heritage";
 
-document.querySelector(".history h2").textContent =
-    lang === "bn" ? "📖 পরিবারের ইতিহাস" : "📖 Family History";
+  document.querySelector(".history h2").textContent =
+    lang === "bn"
+      ? "📖 পরিবারের ইতিহাস"
+      : "📖 Family History";
 
-document.querySelector(".family h2").textContent =
-    lang === "bn" ? "👪 দেওয়ান পরিবার" : "👪 Dewan Family";
-  }
+  document.querySelector(".family h2").textContent =
+    lang === "bn"
+      ? "👪 দেওয়ান পরিবার"
+      : "👪 Dewan Family";
+}
 
 window.setLanguage = setLanguage;
