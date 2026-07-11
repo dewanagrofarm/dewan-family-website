@@ -1,10 +1,12 @@
 {
   "name": "Dewan Family Heritage",
   "short_name": "Dewan Family",
-  "start_url": "/",
+  "description": "Dewan Family Heritage & Agro Farm",
+  "start_url": "/splash.html",
+  "scope": "/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#0f6d3f",
+  "theme_color": "#0b7d32",
   "orientation": "portrait",
   "icons": [
     {
