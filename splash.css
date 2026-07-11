@@ -5,34 +5,61 @@
 }
 
 body{
-    background:#ffffff;
     overflow:hidden;
     font-family:Arial,sans-serif;
+    background:#ffffff;
 }
 
 .splash{
+    position:fixed;
+    top:0;
+    left:0;
     width:100%;
     height:100vh;
     display:flex;
+    flex-direction:column;
     justify-content:center;
     align-items:center;
-    flex-direction:column;
+    background:#fff;
 }
 
 .banner{
     width:90%;
-    max-width:420px;
+    max-width:430px;
     border-radius:25px;
-    animation:zoom 2s ease;
+    animation:fadeIn 1.5s ease;
+}
+
+.characters{
+    position:relative;
+    width:90%;
+    max-width:500px;
+    height:140px;
+    margin-top:25px;
+}
+
+.boy{
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:80px;
+    animation:walk 4s linear forwards;
+}
+
+.father{
+    position:absolute;
+    right:0;
+    bottom:0;
+    width:95px;
 }
 
 .loading{
-    width:220px;
+    width:240px;
     height:8px;
     background:#ddd;
     border-radius:20px;
-    margin-top:30px;
     overflow:hidden;
+    margin-top:20px;
 }
 
 .bar{
@@ -42,56 +69,11 @@ body{
     animation:load 5s linear forwards;
 }
 
-@keyframes load{
-    from{width:0%;}
-    to{width:100%;}
-}
-
-@keyframes zoom{
-    from{
-        transform:scale(.8);
-        opacity:0;
-    }
-    to{
-        transform:scale(1);
-        opacity:1;
-    }
-}
-.welcome{
-    text-align:center;
-    margin-top:20px;
-}
-
-.welcome h1{
-    color:#0b5d2a;
-    font-size:22px;
-}
-
-.welcome p{
-    color:#555;
+.loading-text{
+    margin-top:12px;
+    color:#0b7d32;
     font-size:16px;
-    margin-top:8px;
-}
-
-.animation{
-    width:90%;
-    max-width:500px;
-    height:80px;
-    position:relative;
-    margin-top:25px;
-}
-
-.boy{
-    position:absolute;
-    left:0;
-    font-size:40px;
-    animation:walk 5s linear forwards;
-}
-
-.father{
-    position:absolute;
-    right:0;
-    font-size:42px;
+    font-weight:bold;
 }
 
 @keyframes walk{
@@ -99,6 +81,26 @@ body{
         left:0;
     }
     to{
-        left:78%;
+        left:72%;
+    }
+}
+
+@keyframes load{
+    from{
+        width:0%;
+    }
+    to{
+        width:100%;
+    }
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:scale(.95);
+    }
+    to{
+        opacity:1;
+        transform:scale(1);
     }
 }
