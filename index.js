@@ -90,18 +90,4 @@ onValue(familyRef, (snapshot) => {
       ? "👪 দেওয়ান পরিবার"
       : "👪 Dewan Family";
 }
-document.querySelector(".about p").textContent =
-lang === "bn"
-? "দেওয়ান Family Heritage একটি আধুনিক ডিজিটাল প্ল্যাটফর্ম।"
-: "Dewan Family Heritage is a modern digital platform.";
-
-document.querySelector(".history p").textContent =
-lang === "bn"
-? "দেওয়ান পরিবারের ইতিহাস বহু বছরের ঐতিহ্য বহন করে।"
-: "The history of Dewan Family carries generations of heritage.";
-
-document.querySelector(".family p").textContent =
-lang === "bn"
-? "দেওয়ান পরিবারের সদস্যদের পরিচিতি।"
-: "Introduction of Dewan Family Members.";
 window.setLanguage = setLanguage;
