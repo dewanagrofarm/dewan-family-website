@@ -1,12 +1,3 @@
-// Splash Screen Final
-
-const splash = document.querySelector(".splash");
-
-setTimeout(() => {
-    splash.style.opacity = "0";
-    splash.style.transition = "opacity 1s ease";
-}, 5000);
-
-setTimeout(() => {
+setTimeout(function () {
     window.location.href = "index.html";
-}, 6000);
+}, 3000);
