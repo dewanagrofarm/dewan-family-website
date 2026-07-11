@@ -172,5 +172,10 @@ Preserving Our Heritage, Building Our Future.
 </footer>
 <script type="module" src="firebase.js"></script>
 <script type="module" src="index.js"></script>
+<script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("/sw.js");
+}
+</script>
 </body>
 </html>
