@@ -35,6 +35,8 @@ onValue(familyRef, (snapshot) => {
 
   const nav = document.querySelectorAll("nav a");
   const heroTitle = document.querySelector(".hero h2");
+  const heroMainTitle = document.getElementById("heroMainTitle");
+const siteTitle = document.getElementById("siteTitle");
   const heroText = document.querySelector(".hero p");
   const btn = document.querySelectorAll(".btn");
 
@@ -50,6 +52,8 @@ onValue(familyRef, (snapshot) => {
     nav[7].textContent = "🔑 অ্যাডমিন";
 
     heroTitle.textContent = "🌿 দেওয়ান পরিবারের ঐতিহ্যে স্বাগতম";
+    heroMainTitle.textContent = "Dewan Family Heritage";
+siteTitle.textContent = "Dewan Family Heritage";
     heroText.textContent =
       "বাংলাদেশের অন্যতম ঐতিহাসিক দেওয়ান পরিবারের ইতিহাস, বংশধারা, কৃষি খামার ও ভবিষ্যৎ পরিকল্পনার ডিজিটাল সংরক্ষণ।";
 
@@ -70,6 +74,8 @@ onValue(familyRef, (snapshot) => {
     nav[7].textContent = "🔑 Admin";
 
     heroTitle.textContent = "🌿 Welcome to Dewan Family Heritage";
+   heroMainTitle.textContent = "Dewan Family Heritage";
+  siteTitle.textContent = "Dewan Family Heritage";
     heroText.textContent =
       "Digital preservation of the history, family tree, agro farm and future vision of Dewan Family.";
 
@@ -98,7 +104,7 @@ window.setLanguage = setLanguage;
 let deferredPrompt;
 
 window.addEventListener("beforeinstallprompt", (e) => {
-  e.preventDefault();
+e.preventDefault();
   deferredPrompt = e;
 
   const installBtn = document.getElementById("installBtn");
