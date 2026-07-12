@@ -1,107 +1,89 @@
 <!DOCTYPE html>
 <html lang="bn">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Dewan Family Heritage</title>
 
-    <meta name="theme-color" content="#0f6d3f">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <link rel="manifest" href="manifest.json">
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<!-- ================= HEADER ================= -->
+
 <header class="header">
 
-    <div class="container">
+    <button class="menu-btn">
+        <i class="fa-solid fa-bars"></i>
+    </button>
 
-        <div class="logo">
+    <div class="logo-box">
 
-            <h1 data-i18n="siteTitle">
-                Dewan Family Heritage
-            </h1>
+        <!-- তোমার Final Logo -->
+        <img src="assets/logo/logo.png"
+             class="logo"
+             alt="Dewan Family Heritage">
 
-            <p data-i18n="siteSubtitle">
-                Dewan Agro Farm
-            </p>
+        <h1>Dewan Family Heritage</h1>
 
-        </div>
-
-        <nav>
-
-            <a href="#home" data-i18n="home">🏠 Home</a>
-
-            <a href="#family" data-i18n="family">👨‍👩‍👧‍👦 Family</a>
-
-            <a href="#tree" data-i18n="tree">🌳 Family Tree</a>
-
-            <a href="#history" data-i18n="history">📖 History</a>
-
-            <a href="#agro" data-i18n="agro">🌾 Agro Farm</a>
-
-            <a href="#investment" data-i18n="investment">💰 Investment</a>
-
-            <a href="#gallery" data-i18n="gallery">🖼 Gallery</a>
-
-            <a href="#contact" data-i18n="contact">📞 Contact</a>
-
-            <a href="admin.html" data-i18n="admin">🔑 Admin</a>
-
-        </nav>
-
-        <div class="language">
-
-            <button onclick="setLanguage('bn')">
-                🇧🇩 বাংলা
-            </button>
-
-            <button onclick="setLanguage('en')">
-                🇬🇧 English
-            </button>
-
-        </div>
+        <p class="slogan">
+            পরিবার ও কৃষির বন্ধনে,<br>
+            সমৃদ্ধ আগামী প্রজন্ম।
+        </p>
 
     </div>
 
+    <button class="language-btn">
+        🇧🇩 বাংলা
+    </button>
+
 </header>
 
-<section id="home" class="hero">
+<!-- ================= HERO ================= -->
 
-    <div class="container">
+<section class="hero">
 
-        <h2 data-i18n="welcome">
-            🌿 দেওয়ান পরিবারের ঐতিহ্যে স্বাগতম
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <span class="welcome">
+            🌿 স্বাগতম
+        </span>
+
+        <h2>
+            দেওয়ান পরিবারে আপনাকে স্বাগতম
         </h2>
 
-        <h1 data-i18n="heroTitle">
-            Dewan Family Heritage
-        </h1>
+        <p>
 
-        <p data-i18n="heroText">
-            বাংলাদেশের অন্যতম ঐতিহ্যবাহী দেওয়ান পরিবারের ইতিহাস,
-            বংশবৃক্ষ, কৃষি উদ্যোগ এবং ভবিষ্যৎ পরিকল্পনার ডিজিটাল সংরক্ষণ।
+            একটি আধুনিক ডিজিটাল প্ল্যাটফর্ম,
+            যেখানে পরিবারের ইতিহাস,
+            সদস্যদের তথ্য,
+            বংশপরিচয় এবং
+            দেওয়ান এগ্রো ফার্ম
+            একত্রে সংরক্ষিত থাকবে।
+
         </p>
 
         <div class="hero-buttons">
 
-            <a href="#family" class="btn"
-               data-i18n="btnFamily">
-               👨‍👩‍👧‍👦 পরিবার
+            <a href="#" class="btn btn-primary">
+                আমাদের সম্পর্কে
             </a>
 
-            <a href="#tree" class="btn"
-               data-i18n="btnTree">
-               🌳 বংশবৃক্ষ
-            </a>
-
-            <a href="register.html"
-               class="btn"
-               data-i18n="btnJoin">
-               👤 সদস্য হোন
+            <a href="#" class="btn btn-outline">
+                পরিবারে যোগ দিন
             </a>
 
         </div>
@@ -109,383 +91,292 @@
     </div>
 
 </section>
-<!-- ABOUT -->
 
-<section id="about" class="about">
+<!-- ================= QUICK MENU ================= -->
 
-<div class="container">
+<section class="quick-menu">
 
-<h2 data-i18n="aboutTitle">
-🌿 About Dewan Family Heritage
-</h2>
+    <div class="menu-card">
+        <i class="fa-solid fa-users"></i>
+        <h3>পরিবার</h3>
+        <p>আমাদের পরিবারের সকল সদস্য</p>
+    </div>
 
-<p data-i18n="aboutText">
-Dewan Family Heritage একটি আধুনিক ডিজিটাল প্ল্যাটফর্ম যেখানে
-দেওয়ান পরিবারের ইতিহাস, বংশবৃক্ষ, কৃষি উদ্যোগ এবং ভবিষ্যৎ পরিকল্পনা
-সংরক্ষণ করা হবে।
-</p>
+    <div class="menu-card">
+        <i class="fa-solid fa-book-open"></i>
+        <h3>পারিবারিক ইতিহাস</h3>
+        <p>ঐতিহ্য ও বংশপরিচয়</p>
+    </div>
 
-</div>
+    <div class="menu-card">
+        <i class="fa-solid fa-seedling"></i>
+        <h3>দেওয়ান এগ্রো ফার্ম</h3>
+        <p>কৃষি ও উন্নয়ন</p>
+    </div>
 
-</section>
+    <div class="menu-card">
+        <i class="fa-solid fa-chart-line"></i>
+        <h3>বিনিয়োগ</h3>
+        <p>চলমান প্রকল্পসমূহ</p>
+    </div>
 
-<!-- MISSION -->
+    <div class="menu-card">
+        <i class="fa-solid fa-image"></i>
+        <h3>গ্যালারি</h3>
+        <p>ছবি ও স্মৃতি</p>
+    </div>
 
-<section class="mission">
+    <div class="menu-card">
+        <i class="fa-solid fa-bullhorn"></i>
+        <h3>নোটিশ</h3>
+        <p>সর্বশেষ ঘোষণা</p>
+    </div>
 
-<div class="container">
+    <div class="menu-card">
+        <i class="fa-solid fa-phone"></i>
+        <h3>যোগাযোগ</h3>
+        <p>আমাদের সাথে যোগাযোগ করুন</p>
+    </div>
 
-<h2 data-i18n="missionTitle">
-🎯 Mission & Vision
-</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3 data-i18n="card1Title">📖 Heritage</h3>
-<p data-i18n="card1Text">
-পারিবারিক ইতিহাস সংরক্ষণ।
-</p>
-</div>
-
-<div class="card">
-<h3 data-i18n="card2Title">🌾 Agro Farm</h3>
-<p data-i18n="card2Text">
-আধুনিক কৃষি ও খাদ্য নিরাপত্তা।
-</p>
-</div>
-
-<div class="card">
-<h3 data-i18n="card3Title">💰 Investment</h3>
-<p data-i18n="card3Text">
-ভবিষ্যৎ প্রজন্মের জন্য সম্পদ গঠন।
-</p>
-</div>
-
-</div>
-
-</div>
+    <div class="menu-card">
+        <i class="fa-solid fa-user-plus"></i>
+        <h3>যোগ দিন</h3>
+        <p>নতুন সদস্য নিবন্ধন</p>
+    </div>
 
 </section>
 
-<!-- FAMILY -->
+<!-- ================= STATISTICS ================= -->
 
-<section id="family" class="family">
+<section class="stats">
 
-<div class="container">
+    <div class="stat-box">
+        <i class="fa-solid fa-users"></i>
+        <h2>125+</h2>
+        <span>সদস্য</span>
+    </div>
 
-<h2 data-i18n="familyTitle">
-👨‍👩‍👧‍👦 Dewan Family
-</h2>
+    <div class="stat-box">
+        <i class="fa-solid fa-crown"></i>
+        <h2>8+</h2>
+        <span>প্রজন্ম</span>
+    </div>
 
-<p data-i18n="familyText">
-দেওয়ান পরিবারের সদস্যদের পরিচিতি
-</p>
+    <div class="stat-box">
+        <i class="fa-solid fa-camera"></i>
+        <h2>450+</h2>
+        <span>ছবি</span>
+    </div>
 
-<div id="family-list"></div>
+    <div class="stat-box">
+        <i class="fa-solid fa-building"></i>
+        <h2>5+</h2>
+        <span>প্রকল্প</span>
+    </div>
 
-</div>
-
-</section>
-
-<!-- FAMILY TREE -->
-
-<section id="tree" class="family-tree">
-
-<div class="container">
-
-<h2 data-i18n="treeTitle">
-🌳 Living Family Tree
-</h2>
-
-<p data-i18n="treeText">
-দেওয়ান পরিবারের জীবিত সদস্যদের পারিবারিক বৃক্ষ
-</p>
-
-<div class="tree">
-
-<div class="member">
-<h3 data-i18n="founder">
-👴 প্রতিষ্ঠাতা
-</h3>
-
-<p data-i18n="founderName">
-এখানে নাম লিখুন
-</p>
-
-</div>
-
-</div>
-
-</div>
+    <div class="stat-box">
+        <i class="fa-solid fa-handshake"></i>
+        <h2>10+</h2>
+        <span>সহযোগী প্রতিষ্ঠান</span>
+    </div>
 
 </section>
 
-<!-- HISTORY -->
+<!-- ================= NOTICE + FEATURED MEMBERS ================= -->
+
+<section class="info-section">
+
+    <!-- Latest Notice -->
+    <div class="notice-box">
+
+        <div class="section-title">
+            <h2>📢 সর্বশেষ নোটিশ</h2>
+            <a href="#">সব দেখুন →</a>
+        </div>
+
+        <ul class="notice-list">
+            <li>
+                <span>●</span>
+                <p>পারিবারিক বনভোজন ২০২৬</p>
+                <small>১০ জানুয়ারি, ২০২৬</small>
+            </li>
+
+            <li>
+                <span>●</span>
+                <p>বার্ষিক সাধারণ সভা</p>
+                <small>০৫ ফেব্রুয়ারি, ২০২৬</small>
+            </li>
+
+            <li>
+                <span>●</span>
+                <p>নতুন সদস্য নিবন্ধন শুরু</p>
+                <small>২০ মার্চ, ২০২৬</small>
+            </li>
+        </ul>
+
+    </div>
+
+    <!-- Featured Members -->
+
+    <div class="member-box">
+
+        <div class="section-title">
+            <h2>👨‍👩‍👧 বিশিষ্ট সদস্যবৃন্দ</h2>
+            <a href="#">সব দেখুন →</a>
+        </div>
+
+        <div class="member-list">
+
+            <div class="member-card">
+                <img src="assets/members/member1.jpg" alt="">
+                <h4>মোঃ নাহিদ দেওয়ান</h4>
+                <p>প্রতিষ্ঠাতা</p>
+            </div>
+
+            <div class="member-card">
+                <img src="assets/members/member2.jpg" alt="">
+                <h4>সদস্য</h4>
+                <p>পরিবার</p>
+            </div>
+
+            <div class="member-card">
+                <img src="assets/members/member3.jpg" alt="">
+                <h4>সদস্য</h4>
+                <p>পরিবার</p>
+            </div>
+
+            <div class="member-card">
+                <img src="assets/members/member4.jpg" alt="">
+                <h4>সদস্য</h4>
+                <p>পরিবার</p>
+            </div>
 
-<section id="history" class="history">
-
-<div class="container">
-
-<h2 data-i18n="historyTitle">
-📖 Family History
-</h2>
-
-<p data-i18n="historyText">
-দেওয়ান পরিবারের ইতিহাস, ঐতিহ্য,
-পারিবারিক মূল্যবোধ এবং ভবিষ্যৎ প্রজন্মের জন্য
-ডিজিটাল সংরক্ষণ।
-</p>
-
-</div>
-
-</section>
-
-<!-- AGRO -->
-
-<section id="agro" class="about">
-
-<div class="container">
-
-<h2 data-i18n="agroTitle">
-🌾 Dewan Agro Farm
-</h2>
-
-<p data-i18n="agroText">
-আধুনিক কৃষি, খাদ্য নিরাপত্তা ও
-টেকসই উন্নয়নের জন্য আমাদের উদ্যোগ।
-</p>
-
-</div>
-
-</section>
-
-<!-- INVESTMENT -->
-
-<section id="investment" class="about">
-
-<div class="container">
-
-<h2 data-i18n="investmentTitle">
-💰 Investment
-</h2>
-
-<p data-i18n="investmentText">
-দেওয়ান পরিবারের ভবিষ্যৎ উন্নয়নের
-বিনিয়োগ পরিকল্পনা।
-</p>
-
-</div>
-
-</section>
-<!-- ABOUT -->
-
-<section id="about" class="about">
-
-<div class="container">
-
-<h2 data-i18n="aboutTitle">
-🌿 About Dewan Family Heritage
-</h2>
-
-<p data-i18n="aboutText">
-Dewan Family Heritage একটি আধুনিক ডিজিটাল প্ল্যাটফর্ম যেখানে
-দেওয়ান পরিবারের ইতিহাস, বংশবৃক্ষ, কৃষি উদ্যোগ এবং ভবিষ্যৎ পরিকল্পনা
-সংরক্ষণ করা হবে।
-</p>
-
-</div>
-
-</section>
-
-<!-- MISSION -->
-
-<section class="mission">
-
-<div class="container">
-
-<h2 data-i18n="missionTitle">
-🎯 Mission & Vision
-</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3 data-i18n="card1Title">📖 Heritage</h3>
-<p data-i18n="card1Text">
-পারিবারিক ইতিহাস সংরক্ষণ।
-</p>
-</div>
-
-<div class="card">
-<h3 data-i18n="card2Title">🌾 Agro Farm</h3>
-<p data-i18n="card2Text">
-আধুনিক কৃষি ও খাদ্য নিরাপত্তা।
-</p>
-</div>
-
-<div class="card">
-<h3 data-i18n="card3Title">💰 Investment</h3>
-<p data-i18n="card3Text">
-ভবিষ্যৎ প্রজন্মের জন্য সম্পদ গঠন।
-</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- FAMILY -->
-
-<section id="family" class="family">
-
-<div class="container">
-
-<h2 data-i18n="familyTitle">
-👨‍👩‍👧‍👦 Dewan Family
-</h2>
-
-<p data-i18n="familyText">
-দেওয়ান পরিবারের সদস্যদের পরিচিতি
-</p>
-
-<div id="family-list"></div>
-
-</div>
-
-</section>
-
-<!-- FAMILY TREE -->
-
-<section id="tree" class="family-tree">
-
-<div class="container">
-
-<h2 data-i18n="treeTitle">
-🌳 Living Family Tree
-</h2>
-
-<p data-i18n="treeText">
-দেওয়ান পরিবারের জীবিত সদস্যদের পারিবারিক বৃক্ষ
-</p>
-
-<div class="tree">
-
-<div class="member">
-<h3 data-i18n="founder">
-👴 প্রতিষ্ঠাতা
-</h3>
-
-<p data-i18n="founderName">
-এখানে নাম লিখুন
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- HISTORY -->
-
-<section id="history" class="history">
-
-<div class="container">
-
-<h2 data-i18n="historyTitle">
-📖 Family History
-</h2>
-
-
-<!-- GALLERY -->
-
-<section id="gallery" class="gallery">
-
-    <div class="container">
-
-        <h2 data-i18n="galleryTitle">
-            🖼️ Gallery
-        </h2>
-
-        <p data-i18n="galleryText">
-            দেওয়ান পরিবারের ছবি, ভিডিও এবং স্মৃতিচারণ।
-        </p>
-
-        <div class="gallery-grid" id="gallery-list">
-            <!-- Firebase Gallery -->
         </div>
 
     </div>
 
 </section>
 
-<!-- CONTACT -->
+<!-- ================= GALLERY ================= -->
 
-<section id="contact" class="contact">
+<section class="gallery-section">
 
-    <div class="container">
+    <div class="section-title">
+        <h2>📸 সাম্প্রতিক গ্যালারি</h2>
+        <a href="#">সব দেখুন →</a>
+    </div>
 
-        <h2 data-i18n="contactTitle">
-            📞 Contact
-        </h2>
+    <div class="gallery-grid">
 
-        <p data-i18n="contactText">
-            Dewan Family Heritage সম্পর্কে যোগাযোগ করতে নিচের তথ্য ব্যবহার করুন।
+        <img src="assets/gallery/1.jpg" alt="">
+        <img src="assets/gallery/2.jpg" alt="">
+        <img src="assets/gallery/3.jpg" alt="">
+        <img src="assets/gallery/4.jpg" alt="">
+        <img src="assets/gallery/5.jpg" alt="">
+        <img src="assets/gallery/6.jpg" alt="">
+
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="footer-logo">
+
+        <img src="assets/logo/logo.png"
+             alt="Dewan Family Heritage Logo">
+
+        <h2>Dewan Family Heritage</h2>
+
+        <p>
+            পরিবার ও কৃষির বন্ধনে,<br>
+            সমৃদ্ধ আগামী প্রজন্ম।
         </p>
 
-        <a href="mailto:info@dewanfamily.com" class="btn"
-           data-i18n="contactBtn">
-            ✉️ Contact Now
+    </div>
+
+    <div class="footer-contact">
+
+        <h3>যোগাযোগ</h3>
+
+        <p>
+            <i class="fa-solid fa-location-dot"></i>
+            বাংলাদেশ
+        </p>
+
+        <p>
+            <i class="fa-solid fa-phone"></i>
+            +880 1XXXXXXXXX
+        </p>
+
+        <p>
+            <i class="fa-solid fa-envelope"></i>
+            info@dewanfamily.com
+        </p>
+
+    </div>
+
+    <div class="footer-social">
+
+        <h3>সামাজিক যোগাযোগ</h3>
+
+        <a href="#">
+            <i class="fab fa-facebook-f"></i>
         </a>
 
-    </div>
+        <a href="#">
+            <i class="fab fa-youtube"></i>
+        </a>
 
-</section>
-
-<footer>
-
-    <div class="container">
-
-        <h2>
-            Dewan Family Heritage
-        </h2>
-
-        <p data-i18n="footerText">
-            Preserving Our Heritage, Building Our Future.
-        </p>
-
-        <small>
-            © 2026 Dewan Family Heritage & Dewan Agro Farm
-        </small>
+        <a href="#">
+            <i class="fab fa-whatsapp"></i>
+        </a>
 
     </div>
 
 </footer>
 
-<button id="installBtn"
-        class="btn"
-        style="display:none;">
-    📲 Install App
-</button>
+<!-- ================= COPYRIGHT ================= -->
 
-<script type="module" src="firebase.js"></script>
-<script type="module" src="index.js"></script>
+<div class="copyright">
+
+    © 2026 Dewan Family Heritage.
+    All Rights Reserved.
+
+</div>
+
+<!-- ================= BOTTOM NAVIGATION ================= -->
+
+<nav class="bottom-nav">
+
+    <a href="index.html" class="active">
+        <i class="fa-solid fa-house"></i>
+        <span>হোম</span>
+    </a>
+
+    <a href="pages/family.html">
+        <i class="fa-solid fa-users"></i>
+        <span>পরিবার</span>
+    </a>
+
+    <a href="pages/notice.html">
+        <i class="fa-solid fa-bell"></i>
+        <span>নোটিশ</span>
+    </a>
+
+    <a href="#">
+        <i class="fa-solid fa-bars"></i>
+        <span>মেনু</span>
+    </a>
+
+</nav>
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script src="index.js"></script>
 <script src="language.js"></script>
 
-<script>
-
-if ("serviceWorker" in navigator) {
-
-    navigator.serviceWorker.register("sw.js");
-
-}
-
-</script>
-
 </body>
-
 </html>
