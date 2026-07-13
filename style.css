@@ -153,22 +153,19 @@ button{
               HERO SECTION
 ========================================= */
 
-.hero{
+..hero{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
 
-    position:relative;
+    background: url("hero-bg.png") center center/cover no-repeat;
 
-    width:100%;
-    min-height:100vh;
-
-    background:url("file_0000000063c07209999f1bf9b788811e") center center/cover no-repeat;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    text-align:center;
-
-    padding:130px 20px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 130px 20px 80px;
+}
 
 }
 
