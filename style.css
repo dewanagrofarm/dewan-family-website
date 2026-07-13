@@ -829,3 +829,53 @@ font-size:48px;
 }
 
 }
+
+/* ===== SIDEBAR ===== */
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: -280px;
+    width: 280px;
+    height: 100%;
+    background: #0B5D3B;
+    transition: 0.3s;
+    z-index: 1000;
+    padding: 20px;
+}
+
+.sidebar.active{
+    left: 0;
+}
+
+.sidebar-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.sidebar-header h2{
+    color: white;
+}
+
+#closeMenu{
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.sidebar a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 14px 0;
+    border-bottom: 1px solid rgba(255,255,255,.2);
+    font-size: 18px;
+}
+
+.sidebar a:hover{
+    color: #D4AF37;
+}
