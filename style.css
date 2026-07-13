@@ -153,7 +153,7 @@ button{
               HERO SECTION
 ========================================= */
 
-..hero{
+.hero{
     position: relative;
     width: 100%;
     min-height: 100vh;
@@ -165,8 +165,6 @@ button{
     justify-content: center;
     text-align: center;
     padding: 130px 20px 80px;
-}
-
 }
 
 .hero-overlay{
