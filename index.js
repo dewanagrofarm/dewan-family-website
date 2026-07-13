@@ -120,3 +120,17 @@ e.preventDefault();
     });
   }
 });
+// Sidebar Menu
+const menuBtn = document.getElementById("menuBtn");
+const sidebar = document.getElementById("sidebar");
+const closeMenu = document.getElementById("closeMenu");
+
+if (menuBtn && sidebar && closeMenu) {
+  menuBtn.addEventListener("click", () => {
+    sidebar.classList.add("active");
+  });
+
+  closeMenu.addEventListener("click", () => {
+    sidebar.classList.remove("active");
+  });
+}
