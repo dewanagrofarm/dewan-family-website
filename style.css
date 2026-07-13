@@ -66,28 +66,24 @@ button{
 ========================================= */
 
 .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 
-    position:fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-    top:0;
-    left:0;
+    padding: 8px 18px;
 
-    width:100%;
+    background: rgba(11,93,59,.78);
 
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
+    backdrop-filter: blur(18px);
 
-    padding:12px 18px;
+    z-index: 999;
 
-    background:rgba(11,93,59,.88);
-
-    backdrop-filter:blur(12px);
-
-    z-index:999;
-
-    border-bottom:2px solid var(--secondary);
-
+    border-bottom: 1px solid rgba(212,175,55,.5);
 }
 
 .menu-btn,
@@ -119,23 +115,14 @@ button{
 }
 
 .logo{
-
-    width:78px;
-
+    width:60px;
     margin:auto;
-
 }
-
 .logo-box h1{
-
-    color:var(--white);
-
-    font-size:22px;
-
-    margin-top:8px;
-
+    color:#fff;
+    font-size:18px;
+    margin-top:6px;
     font-weight:700;
-
 }
 
 .logo-box p{
@@ -164,7 +151,7 @@ button{
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 130px 20px 80px;
+    padding:110px 20px 80px;
 }
 
 .hero-overlay{
