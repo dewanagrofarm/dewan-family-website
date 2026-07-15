@@ -1,1 +1,244 @@
+<!DOCTYPE html>
+<html lang="bn">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>পরিবারে সদস্য নিবন্ধন | Dewan Family Heritage</title>
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../register.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+<header class="register-header">
+
+    <a href="../index.html" class="back-btn">
+        <i class="fa-solid fa-arrow-left"></i>
+    </a>
+
+    <img src="../images/logo.png" alt="Dewan Family Heritage Logo" class="register-logo">
+
+    <h1>Dewan Family Heritage</h1>
+    <h2>পরিবারে সদস্য নিবন্ধন</h2>
+
+</header>
+
+<main class="register-container">
+
+<div class="register-note">
+
+    <i class="fa-solid fa-circle-info"></i>
+
+    <p>
+        অনুগ্রহ করে সঠিক তথ্য প্রদান করুন।
+        যাচাই শেষে আপনার আবেদন গ্রহণ করা হবে।
+    </p>
+
+</div>
+
+<form id="registerForm">
+
+<!-- ===================================== -->
+<!-- ব্যক্তিগত তথ্য -->
+<!-- ===================================== -->
+
+<div class="form-section">
+
+<h3>
+    <i class="fa-solid fa-user"></i>
+    ব্যক্তিগত তথ্য
+</h3>
+
+<div class="form-group">
+<label for="fullName">পুরো নাম</label>
+<input
+type="text"
+id="fullName"
+name="fullName"
+placeholder="আপনার পুরো নাম লিখুন"
+required>
+</div>
+
+<div class="form-group">
+<label for="fatherName">পিতার নাম</label>
+<input
+type="text"
+id="fatherName"
+name="fatherName"
+placeholder="পিতার নাম লিখুন"
+required>
+</div>
+
+<div class="form-group">
+<label for="motherName">মাতার নাম</label>
+<input
+type="text"
+id="motherName"
+name="motherName"
+placeholder="মাতার নাম লিখুন"
+required>
+</div>
+
+<div class="form-group">
+<label for="birthDate">জন্মতারিখ</label>
+<input
+type="date"
+id="birthDate"
+name="birthDate"
+required>
+</div>
+
+<div class="form-group">
+<label for="gender">লিঙ্গ</label>
+
+<select id="gender" name="gender" required>
+
+<option value="">নির্বাচন করুন</option>
+
+<option value="পুরুষ">পুরুষ</option>
+
+<option value="মহিলা">মহিলা</option>
+
+<option value="অন্যান্য">অন্যান্য</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+<label for="maritalStatus">বৈবাহিক অবস্থা</label>
+
+<select id="maritalStatus" name="maritalStatus" required>
+
+<option value="">নির্বাচন করুন</option>
+
+<option value="অবিবাহিত">অবিবাহিত</option>
+
+<option value="বিবাহিত">বিবাহিত</option>
+
+<option value="অন্যান্য">অন্যান্য</option>
+
+</select>
+
+</div>
+
+</div>
+  <!-- ===================================== -->
+<!-- ঠিকানা ও যোগাযোগ -->
+<!-- ===================================== -->
+
+<div class="form-section">
+
+<h3>
+    <i class="fa-solid fa-location-dot"></i>
+    ঠিকানা ও যোগাযোগ
+</h3>
+
+<div class="form-group">
+<label for="permanentAddress">স্থায়ী ঠিকানা</label>
+
+<textarea
+id="permanentAddress"
+name="permanentAddress"
+rows="3"
+placeholder="আপনার স্থায়ী ঠিকানা লিখুন"
+required></textarea>
+
+</div>
+
+<div class="form-group">
+<label for="presentAddress">বর্তমান ঠিকানা</label>
+
+<textarea
+id="presentAddress"
+name="presentAddress"
+rows="3"
+placeholder="আপনার বর্তমান ঠিকানা লিখুন"
+required></textarea>
+
+</div>
+
+<div class="form-group">
+<label for="mobile">নিজের মোবাইল নম্বর</label>
+
+<input
+type="tel"
+id="mobile"
+name="mobile"
+placeholder="01XXXXXXXXX"
+required>
+
+</div>
+
+<div class="form-group">
+<label for="guardianMobile">
+
+ঘনিষ্ঠজনের মোবাইল নম্বর
+<span>(ঐচ্ছিক)</span>
+
+</label>
+
+<input
+type="tel"
+id="guardianMobile"
+name="guardianMobile"
+placeholder="01XXXXXXXXX">
+
+</div>
+
+</div>
+
+<!-- ===================================== -->
+<!-- অন্যান্য তথ্য -->
+<!-- ===================================== -->
+
+<div class="form-section">
+
+<h3>
+    <i class="fa-solid fa-briefcase"></i>
+    অন্যান্য তথ্য
+</h3>
+
+<div class="form-group">
+<label for="profession">পেশা</label>
+
+<input
+type="text"
+id="profession"
+name="profession"
+placeholder="আপনার পেশা লিখুন"
+required>
+
+</div>
+
+<div class="form-group">
+<label for="bloodGroup">রক্তের গ্রুপ</label>
+
+<select
+id="bloodGroup"
+name="bloodGroup"
+required>
+
+<option value="">নির্বাচন করুন</option>
+
+<option>A+</option>
+<option>A-</option>
+
+<option>B+</option>
+<option>B-</option>
+
+<option>AB+</option>
+<option>AB-</option>
+
+<option>O+</option>
+<option>O-</option>
+
+</select>
+
+</div>
